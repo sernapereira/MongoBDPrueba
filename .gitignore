@@ -130,3 +130,5 @@ dist/
 # Ignorar archivos de configuración con información sensible
 config.ini
 secrets.json
+
+mongo_data/
