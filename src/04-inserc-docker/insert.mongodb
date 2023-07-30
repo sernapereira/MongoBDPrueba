@@ -1,0 +1,9 @@
+use("prueba_platzi2")
+db.products2.insertOne({
+    name:"product1",
+    price: 1000
+})
+db.products2.insertOne({
+    name:"product2",
+    price: 600
+})

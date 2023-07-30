@@ -1,0 +1,15 @@
+use("prueba_platzi2")
+
+db.products2.updateOne(
+    {_id: ObjectId('64c676d28f0944574c8bd1a0')}, 
+    {
+        $inc: {
+         
+            price: 1000,
+          
+        }
+    }
+
+)
+
+db.products2.find()

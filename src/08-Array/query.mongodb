@@ -1,0 +1,3 @@
+use("prueba_platzi")
+
+db.inventory.find()

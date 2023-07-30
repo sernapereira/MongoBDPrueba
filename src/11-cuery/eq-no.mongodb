@@ -1,0 +1,15 @@
+use("prueba_platzi")
+
+// db.inventory.find({qty: 20})
+
+// db.inventory.find({"item.code": "123"})
+// db.inventory.find({qty: { $ne: "123"}})
+db.inventory.updateMany({qty: { $ne: 20}},
+    {
+        $inc: {
+            qty: 20
+        }
+    }
+    )
+
+db.inventory.find()

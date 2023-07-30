@@ -1,0 +1,15 @@
+use("prueba_platzi2")
+
+db.products2.updateOne(
+    {_id:4}, 
+    {
+        $set: {
+            name: "cambio de nombre",
+            price: 4000,
+            tags: ["camiza", "jenan", "pantalon"]
+        }
+    }
+
+)
+
+db.products2.find()

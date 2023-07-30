@@ -1,0 +1,7 @@
+use("prueba_platzi")
+
+db.inventory.updateOne({_id:4}, {
+    $push : {
+        tags: "celulares"
+    }
+})

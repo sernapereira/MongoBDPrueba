@@ -1,0 +1,22 @@
+use("prueba_platzi2")
+db.products2.drop()
+
+db.products2.insertMany([
+    {
+        _id:4,
+        name:"product1",
+        price:300
+    },
+    {
+        _id:2,
+        name:"product2",
+        price:400
+    },
+    {
+        _id:3,
+        name:"product3",
+        price:2000
+    }
+])
+
+db.products2.find()

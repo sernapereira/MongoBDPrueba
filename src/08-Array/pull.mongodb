@@ -1,0 +1,15 @@
+use("prueba_platzi")
+
+// db.inventory.updateMany({}, {
+//     $push : {
+//         tags: "book"
+//     }
+// })
+
+db.inventory.updateMany({}, {
+    $pull : {
+        tags: {
+            $in:["book", "school"]
+        }
+    }
+})
